@@ -1,0 +1,33 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+node_js:
+  - '12'
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+  
+notifications:
+  slack: dev-ztg5628:0KxnQtvVMmAQBG0AZxgcq0EY
+  email:
+    recipients:
+      - mytacam78@gmail.com
+      - victorianodev@gmail.com
+    on_success: always
+    on_failure: always
+
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 1b27ea59-3bf5-413c-b495-748a2d1cdeb1
+  app: platzi-store-backend-v1
+  on:
+    repo: V-Juarez/platzi-store-backend
+
