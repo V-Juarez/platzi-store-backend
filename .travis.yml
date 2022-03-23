@@ -12,21 +12,23 @@ git:
 
 script:
   - yarn test
-  
+
 notifications:
-  slack: dev-ztg5628:0KxnQtvVMmAQBG0AZxgcq0EY
+  slack: 
+    secure: "4vlVlBj15V79YM+GNJBEWuQv8Lgjnw1u1FTYNm10cJXimCV06ekRqyGC/GVBLABv6IYcjWXw1NrInTiO6n/7cttUU0ImnpFt1H8YXYWpfJKcBBkrOFf4Qo4+ADHr/1lbT69Q41KPKXUWZCLk2RprnYYahVdnxYETr4GIXZ+qCJu41tqyyj5IpxMxjTRfNq5PjslvyDX1JcldwvVnZrexmjcaOi6Ql1rFWW9bP7MtGOw+yjylH111X/43Dpxnl330t1WoG44KFvRWB/zwOmlwE+/D5a+t5H8AIftt69MGAQdrFj4VE6Pw67ff5Y2O5QPavO7/F/LRd8KzhWfzZWRjy1BuIredCl3hLuE+LgqjS1KaKvgy2Zn6jsHAxJZJBF9FqoTxGEq5IZAUfAJoPaVLY4FPvH5UyU/WeJ8mGtEFyEzL6AbhigYgyPCQGqjOS8eOdTr/WZnjcJRy9BKtvNaAoq4Fy0Bmt5KvhS47C4JEHgAWhl8OF14++gyGDNjGJ0X3bbbOEu6oDayygJQXlMGwbeeUHHqIqx7J7C76hd6ekXZUDAiJnJb0XDjp+9NDWJPvLXkqLGlmOzwjQ6H6zx77TJMTjbCVMQ/CIMrUB3bs0Ns6jtlB3VjJs8PH7Kt36rDhHu47s7HZvoXQg0ku9bPLS0Lkzy8j3pyS5SCJsaYBZBM="
   email:
     recipients:
       - mytacam78@gmail.com
       - victorianodev@gmail.com
-    on_success: always
+    on_success: alwayse
     on_failure: always
 
 deploy:
   provide: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 1b27ea59-3bf5-413c-b495-748a2d1cdeb1
+  api_key:
+    secure: "1ptnBpgEGKjo0xB3GdNEL47jxrKJ6KSBnsa+S3gbWfBZtqicby+J/vccSPCEvhTLXIb8DEKgW8RYfaOVP9wf6gwwyRxYQXArrJ17p+nc08JcJizvkBha1lANKz/piX1ePrVhAB8oAjb75FFoNfWyCswDWfwsyOTQKOoeH16lFe+SmDH52/SKvhjm9IMRYKIze4Gta3w3wRaSrS2eAWnf8fRjQFa0fLicw9CXyJ1GDqLyz80RWa9t4x9zNnXngwrR7evyR9pcRzhVOiSuOX8GwCUvCAT/lFhtFSvFXLG1OIT5IRDNxITVsXzDz+2wKYhYMnp+/0zAPcN8+sbdqc11CT9Kq3dAZDSfOxL+UuKkuffCOPdN/uzISIkXRsrO3YukgZQiwqeRlkENhlaAe2iem5zQ8fAcT8pwMX4h6NSIerkz2Xxr2WakuZXU9G6XY9gPZB17zAD7FdL/xf3hMDcDrr1gaizUC87sVszYMjElSUpviNJqZk9tlJONaNGk9KwB9TqG4RvJ33vryI4A9xlgpFvDkrpp1SwtU9k6xsUDZm/WgPfSDOjh5Cr0oM7E+AhtrNUFnkhIn4PZz9GzzIMvDWadOklbCNnVF3j9byFR1O4A9NqzB8pcdEtON6LyKZ1Y8ElzuHOm4P/Ls+LtpJBgj+DFQFISI+Hs/UHD2Urlty0="
   app: platzi-store-backend-v1
   on:
     repo: V-Juarez/platzi-store-backend
